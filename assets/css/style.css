@@ -13,12 +13,14 @@
 }
 
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: Montserrat,sans-serif;
+  font-weight: 500;
   color: #444444;
+  background-color: #F8F8FF;
 }
 
 a {
-  color: #4154f1;
+  color: #1A0F91;
   text-decoration: none;
 }
 
@@ -28,7 +30,7 @@ a:hover {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Nunito", sans-serif;
+  font-family: Montserrat, sans-serif;
 }
 
 /*--------------------------------------------------------------
@@ -222,7 +224,7 @@ section {
   align-items: center;
   justify-content: space-between;
   padding: 10px 0 10px 30px;
-  font-family: "Nunito", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 16px;
   font-weight: 700;
   color: #013289;
@@ -431,31 +433,45 @@ section {
 
 .hero h1 {
   margin: 0;
-  font-size: 48px;
+  font-size: 60px;
   font-weight: 700;
-  color: #012970;
+  color: #161E2E;
+  margin-top: -5rem;
+  margin-bottom: 1rem;
 }
 
 .hero h2 {
-  color: #444444;
+  color: #616979;
   margin: 15px 0 0 0;
-  font-size: 26px;
+  font-size: 16px;
+  line-height: 180%;
 }
 
 .hero .btn-get-started {
-  margin-top: 30px;
+  margin-top: 3rem;
   line-height: 0;
-  padding: 15px 40px;
+  padding: 8px 25px;
   border-radius: 4px;
   transition: 0.5s;
   color: #fff;
-  background: #4154f1;
-  box-shadow: 0px 5px 30px rgba(65, 84, 241, 0.4);
+  background-image: linear-gradient(50deg,#1A0F91 55%,#BE1E7C 100%);
+}
+.hero .btn-doc{
+  margin-top: 3rem;
+  margin-left: 1rem;
+  line-height: 100%;
+  padding: 8px 25px;
+  border-radius: 4px;
+  transition: 0.5s;
+  color: #FF2473;
+  font-weight: 600;
+  background-color: white;
+  box-shadow: 0px 3px 10px rgba(98, 101, 121, 0.25);
 }
 
 .hero .btn-get-started span {
-  font-family: "Nunito", sans-serif;
-  font-weight: 600;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
   font-size: 16px;
   letter-spacing: 1px;
 }
@@ -474,11 +490,11 @@ section {
   text-align: right;
 }
 
-/* @media (min-width: 1024px) {
-  .hero {
+@media (min-width: 1024px) {
+  /* .hero {
     background-attachment: fixed;
-  }
-} */
+  } */
+}
 
 @media (max-width: 991px) {
   .hero {
@@ -549,7 +565,7 @@ section {
 }
 
 .about .btn-read-more span {
-  font-family: "Nunito", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 600;
   font-size: 16px;
   letter-spacing: 1px;
@@ -568,6 +584,102 @@ section {
 /*--------------------------------------------------------------
 # Values
 --------------------------------------------------------------*/
+
+
+.values P {
+  color: #616979;
+}
+
+.values .titlle {
+  color: #fff;
+  text-align: left;
+}
+
+.values .fcard {
+  background-color: #F1F0FE;
+  background-image: radial-gradient(farthest-side at -30% 100%, #A19BED, #D8D6F9, #F4F4FF); 
+  border-radius: 2%;
+}
+
+.values .box {
+  padding: 30px;
+  box-shadow: 0px 0 5px rgba(1, 41, 112, 0.08);
+  text-align: left;
+  transition: 0.3s;
+  height: 100%;
+}
+
+#values {
+  background-image: linear-gradient(120deg, #116696 0%, #1A0F91 30%, #981B80 100%);
+  padding: 0;
+}
+
+.values .box img {
+  padding: 0 0 30px;
+  transition: 0.5s;
+}
+
+.values .container{
+  padding: 70px 0;
+}
+
+.values .box h3 {
+  font-size: 24px;
+  color: #161E2E;
+  font-weight: 500;
+  margin-bottom: 18px;
+}
+
+.values .box:hover {
+  box-shadow: 0px 0 30px rgba(1, 41, 112, 0.08);
+}
+
+.values .box:hover img {
+  transform: scale(.9);
+}
+
+/* BTN */
+.values .btn-box{
+  position: absolute;
+  bottom: 1.5rem;
+}
+
+.values .btn-get-started {
+  margin-top: 80px;
+  margin-bottom: 15px;
+  line-height: 100%;
+  padding: 10px 20px;
+  border-radius: 4px;
+  transition: 0.5s;
+  color: #1A0F91;
+  background: #fff;
+  box-shadow: 0px 3px 10px rgb(65 84 241 / 25%)
+}
+
+.values .btn-get-started span {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+.values .btn-get-started i {
+  margin-left: 5px;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.values .btn-get-started:hover {
+  transform: translateX(5px);
+}
+
+.fcard p {
+  margin-bottom: 10rem;
+  line-height: 160%
+}
+
+
+
 #bevel-right {
   -webkit-text-size-adjust: 100%;
   line-height: 1.5;
@@ -579,7 +691,7 @@ section {
   bottom: -150px;
   left: 0;
   border-right-width: 100vw;
-  border-top-width: 150px;
+  border-top-width: 100px;
 }
 #bevel-left {
   -webkit-text-size-adjust: 100%;
@@ -592,52 +704,39 @@ section {
   bottom: 0;
   left: 0;
   border-left-width: 100vw;
-  border-bottom-width: 150px;
+  border-bottom-width: 100px;
 }
 
-.values P {
-  color: white;
+@media (min-width: 1440px) {
+  #bevel-right {
+    border-top-width: 150px !important;
+  }
+  #bevel-left {
+    border-bottom-width: 150px !important;
+  }
 }
 
-.values .fcard {
-  background-color: #F1F0FE;
-  background-image: radial-gradient(farthest-side at -30% 100%, #A19BED, #D8D6F9, #F4F4FF); 
-  border-radius: 8% 0%;
+@media (max-width: 1240px) {
+  #bevel-right {
+    border-top-width: 75px !important;
+  }
+  #bevel-left {
+    border-bottom-width: 75px !important;
+  }
 }
 
-.values .box {
-  padding: 30px;
-  box-shadow: 0px 0 5px rgba(1, 41, 112, 0.08);
-  text-align: center;
-  transition: 0.3s;
-  height: 100%;
+@media (max-width: 590px) {
+  .values .fcard{
+    margin: 0 calc(var(--bs-gutter-x)*2);
+  }
+  .values .titlle {
+    text-align: center;
+  }
 }
 
-#values {
-  background-image: linear-gradient(-30deg, #116696 0%, #1A0F91 30%, #981B80 100%);
-  padding: 0;
-}
 
-.values .box img {
-  padding: 30px 50px;
-  transition: 0.5s;
-  transform: scale(1.1);
-}
 
-.values .box h3 {
-  font-size: 24px;
-  color: #012970;
-  font-weight: 700;
-  margin-bottom: 18px;
-}
 
-.values .box:hover {
-  box-shadow: 0px 0 30px rgba(1, 41, 112, 0.08);
-}
-
-.values .box:hover img {
-  transform: scale(1);
-}
 
 /*--------------------------------------------------------------
 # Counts
@@ -672,7 +771,7 @@ section {
 .counts .count-box p {
   padding: 0;
   margin: 0;
-  font-family: "Nunito", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 14px;
 }
 
@@ -983,7 +1082,7 @@ section {
   font-size: 36px;
   color: #444444;
   font-weight: 600;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .pricing .price sup {
@@ -1029,7 +1128,7 @@ section {
   transition: none;
   font-size: 16px;
   font-weight: 400;
-  font-family: "Nunito", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 600;
   transition: 0.3s;
   border: 1px solid #4154f1;
@@ -2324,7 +2423,7 @@ section {
   font-weight: 700;
   letter-spacing: 1px;
   color: #012970;
-  font-family: "Nunito", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   margin-top: 3px;
 }
 
@@ -2332,7 +2431,7 @@ section {
   font-size: 14px;
   line-height: 24px;
   margin-bottom: 0;
-  font-family: "Nunito", sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .footer .footer-top .social-links a {
