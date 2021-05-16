@@ -59,7 +59,7 @@ section {
 .section-header p {
   margin: 10px 0 0 0;
   padding: 0;
-  font-size: 38px;
+  font-size: 24px;
   line-height: 42px;
   font-weight: 700;
   color: #1A0F91;
@@ -440,8 +440,8 @@ section {
   background: url(../img/hero-bgm.svg) no-repeat;
   background-position-x: 50%;
   background-size: cover;
-  animation: bgfloat 3s infinite alternate;
-  -webkit-animation:bgfloat 3s infinite alternate;
+  animation: bgfloat 2.5s infinite alternate ease-out;
+  -webkit-animation:bgfloat 2.5s infinite alternate ease-out;
 }
 
 @keyframes bgfloat {
@@ -460,7 +460,7 @@ section {
   font-size: 60px;
   font-weight: 700;
   color: #161E2E;
-  margin-top: -5rem;
+  margin-top: 0;
   margin-bottom: 1rem;
 }
 
@@ -482,12 +482,13 @@ section {
 }
 .hero .btn-doc{
   margin-top: 3rem;
-  margin-left: 1rem;
+  /* margin-left: 1rem; */
   line-height: 100%;
   padding: 8px 25px;
   border-radius: 4px;
   transition: 0.5s;
   color: #FF2473;
+  font-size: 16px;
   font-weight: 600;
   background-color: white;
   box-shadow: 0px 3px 10px rgba(98, 101, 121, 0.25);
@@ -721,8 +722,11 @@ section {
 }
 
 .fcard p {
-  margin-bottom: 10rem;
-  line-height: 160%
+  margin-bottom: 6rem;
+  line-height: 160%;
+  font-size: 14px;
+  font-weight: 400;
+  color: #40454e;
 }
 
 
@@ -760,6 +764,13 @@ section {
   }
   #bevel-left {
     border-bottom-width: 150px !important;
+  }
+  .fcard p {
+    margin-bottom: 8rem;
+    line-height: 180%;
+    font-size: 16px;
+    font-weight: 400;
+    color: #40454e;
   }
 }
 
@@ -830,7 +841,7 @@ section {
 # Features
 --------------------------------------------------------------*/
 #features {
-  padding: 10rem;
+  padding: 10rem 0;
 }
 
 .features .section-header{
@@ -859,7 +870,7 @@ section {
 .features .desc{
   font-size: 16px;
   color: #616979;
-  font-weight: 500;
+  font-weight: 400;
   margin: 0;
 }
 
@@ -951,6 +962,7 @@ section {
   }
   .features .btn-get-started{
     width: 240px;
+    font-size: 16px;
   }
   
 }
@@ -1067,6 +1079,12 @@ section {
   .services .service-box {
     text-align: center;
     padding-left: 3rem;
+  }
+}
+
+@media (min-width: 1200px){
+  .services h3{
+      font-size: 1.55rem;
   }
 }
 
@@ -1345,13 +1363,15 @@ section {
 
 .faq .accordion-button:not(.collapsed) {
   background: none;
-  color: #4154f1;
+  color: #FF2473;
   border-bottom: 0;
 }
 
 .faq .accordion-body {
   padding: 0 0 25px 0;
   border: 0;
+  font-size: 14px;
+  font-weight: 500;
 }
 
 .accordion-item {
@@ -2614,6 +2634,7 @@ section {
   color: #fff;
   font-family: "Nunito", sans-serif;
   margin-top: 3px;
+  line-height: 160%;
 }
 
 .footer .footer-top .footer-info p {
@@ -2624,7 +2645,7 @@ section {
 }
 
 .footer .footer-top .social-links a {
-  font-size: 20px;
+  font-size: 26px;
   display: inline-block;
   color: #fff;
   line-height: 0;
