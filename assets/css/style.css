@@ -472,6 +472,7 @@ section {
 }
 
 .hero .btn-get-started {
+  margin-right: 1rem;
   margin-top: 3rem;
   line-height: 0;
   padding: 8px 25px;
@@ -556,14 +557,22 @@ section {
     display: none;
     width: 100%;
   }
+  .hero .btn-get-started {
+    margin-right: 0;
+    width: 80%;
+    padding: 0.75rem;
+  }
   .hero .btn-doc {
     margin: 2rem 0;
+    width: 80%;
+    padding: 0.75rem;
   }
   .hero {
     background: url(../img/hero-bgs.svg) no-repeat;
     background-position-x: 50%;
     background-size: cover;
   }
+  
 }
 
 /*--------------------------------------------------------------
@@ -964,7 +973,6 @@ section {
     width: 240px;
     font-size: 16px;
   }
-  
 }
 
 
